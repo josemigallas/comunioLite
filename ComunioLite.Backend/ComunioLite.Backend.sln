@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{DC4FCF8C-98A4-4A8D-8414-5579601E4219}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestRunners", "TestRunners", "{D02EF4B4-263D-4F07-AD52-8B2A494A48A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{212392FA-03B1-47D3-94E2-E87D013B15F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunioLite.Backend.Contracts", "ComunioLite.Backend.Contracts\ComunioLite.Backend.Contracts.csproj", "{7F78038E-FD8F-4612-9D63-BEC416705730}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunioLite.Backend.DAL", "ComunioLite.Backend.DAL\ComunioLite.Backend.DAL.csproj", "{F201B2F8-996F-4114-95F7-D02DD59C6255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunioLite.Backend.Entities", "ComunioLite.Backend.Entities\ComunioLite.Backend.Entities.csproj", "{83F28AE6-3548-4DD5-AD85-4B8DAE2F4BA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunioLite.Backend.Repository", "ComunioLite.Backend.Repository\ComunioLite.Backend.Repository.csproj", "{90980DA2-CEA5-4F7D-BC7F-EA838A21CAAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunioLite.Backend.DatabaseInit", "ComunioLite.Backend.DatabaseInit\ComunioLite.Backend.DatabaseInit.csproj", "{16C040C4-D2AA-4512-8DD6-5722B64C835F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F78038E-FD8F-4612-9D63-BEC416705730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F78038E-FD8F-4612-9D63-BEC416705730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F78038E-FD8F-4612-9D63-BEC416705730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F78038E-FD8F-4612-9D63-BEC416705730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F201B2F8-996F-4114-95F7-D02DD59C6255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F201B2F8-996F-4114-95F7-D02DD59C6255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F201B2F8-996F-4114-95F7-D02DD59C6255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F201B2F8-996F-4114-95F7-D02DD59C6255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83F28AE6-3548-4DD5-AD85-4B8DAE2F4BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83F28AE6-3548-4DD5-AD85-4B8DAE2F4BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83F28AE6-3548-4DD5-AD85-4B8DAE2F4BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83F28AE6-3548-4DD5-AD85-4B8DAE2F4BA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90980DA2-CEA5-4F7D-BC7F-EA838A21CAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90980DA2-CEA5-4F7D-BC7F-EA838A21CAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90980DA2-CEA5-4F7D-BC7F-EA838A21CAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90980DA2-CEA5-4F7D-BC7F-EA838A21CAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C040C4-D2AA-4512-8DD6-5722B64C835F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C040C4-D2AA-4512-8DD6-5722B64C835F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C040C4-D2AA-4512-8DD6-5722B64C835F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C040C4-D2AA-4512-8DD6-5722B64C835F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F78038E-FD8F-4612-9D63-BEC416705730} = {DC4FCF8C-98A4-4A8D-8414-5579601E4219}
+		{F201B2F8-996F-4114-95F7-D02DD59C6255} = {DC4FCF8C-98A4-4A8D-8414-5579601E4219}
+		{83F28AE6-3548-4DD5-AD85-4B8DAE2F4BA8} = {DC4FCF8C-98A4-4A8D-8414-5579601E4219}
+		{90980DA2-CEA5-4F7D-BC7F-EA838A21CAAA} = {D02EF4B4-263D-4F07-AD52-8B2A494A48A9}
+		{16C040C4-D2AA-4512-8DD6-5722B64C835F} = {212392FA-03B1-47D3-94E2-E87D013B15F5}
+	EndGlobalSection
+EndGlobal
