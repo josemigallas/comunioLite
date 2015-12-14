@@ -33,7 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,6 +57,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComunioLite.Backend.Contracts\ComunioLite.Backend.Contracts.csproj">
+      <Project>{7f78038e-fd8f-4612-9d63-bec416705730}</Project>
+      <Name>ComunioLite.Backend.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComunioLite.Backend.DAL\ComunioLite.Backend.DAL.csproj">
+      <Project>{f201b2f8-996f-4114-95f7-d02dd59c6255}</Project>
+      <Name>ComunioLite.Backend.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComunioLite.Backend.Entities\ComunioLite.Backend.Entities.csproj">
+      <Project>{83f28ae6-3548-4dd5-ad85-4b8dae2f4ba8}</Project>
+      <Name>ComunioLite.Backend.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
