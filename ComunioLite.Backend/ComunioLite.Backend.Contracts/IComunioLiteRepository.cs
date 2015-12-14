@@ -1,6 +1,10 @@
-﻿namespace ComunioLite.Backend.Contracts
+﻿using System.Collections.Generic;
+using ComunioLite.Backend.Entities;
+
+namespace ComunioLite.Backend.Contracts
 {
-    public class IComunioLiteRepository
+    public interface IComunioLiteRepository
     {
+        IEnumerable<Player> GetPlayersInMarket();
     }
 }

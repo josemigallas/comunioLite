@@ -43,6 +43,12 @@
     <Compile Include="IComunioLiteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComunioLite.Backend.Entities\ComunioLite.Backend.Entities.csproj">
+      <Project>{83F28AE6-3548-4DD5-AD85-4B8DAE2F4BA8}</Project>
+      <Name>ComunioLite.Backend.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
