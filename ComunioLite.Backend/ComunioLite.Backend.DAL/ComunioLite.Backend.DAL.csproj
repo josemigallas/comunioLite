@@ -57,11 +57,16 @@
     <Compile Include="ModelConfigurations\PlayerConfiguration.cs" />
     <Compile Include="ModelConfigurations\TeamConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeedEntities\CategorySeedEntities.cs" />
+    <Compile Include="SeedEntities\ManagerSeedEntities.cs" />
+    <Compile Include="SeedEntities\PlayerSeedEntities.cs" />
+    <Compile Include="SeedEntities\TeamSeedEntities.cs" />
+    <Compile Include="Seeds\CategorySeed.cs" />
+    <Compile Include="Seeds\ManagerSeed.cs" />
+    <Compile Include="Seeds\PlayerSeed.cs" />
+    <Compile Include="Seeds\TeamSeed.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SeedEntities\" />
-    <Folder Include="Seeds\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
