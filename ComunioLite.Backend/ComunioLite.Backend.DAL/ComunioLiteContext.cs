@@ -6,8 +6,9 @@ namespace ComunioLite.Backend.DAL
 {
     public class ComunioLiteContext : DbContext
     {
-        public ComunioLiteContext() : this("ComunioLite")
+        public ComunioLiteContext() : base("ComunioLite")
         {
+            Configuration.LazyLoadingEnabled = false;
         }
 
         public ComunioLiteContext(string connectionString) : base(connectionString)
