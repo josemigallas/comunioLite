@@ -24,6 +24,7 @@ namespace ComunioLite.Backend.DAL
 
         public void Dispose()
         {
+            _dbContext.Dispose();
         }
     }
 }
