@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity.ModelConfiguration;
 using ComunioLite.Backend.Entities;
+using static Constants.Constants;
 
 namespace ComunioLite.Backend.DAL.ModelConfigurations
 {
@@ -7,7 +8,7 @@ namespace ComunioLite.Backend.DAL.ModelConfigurations
     {
         public PlayerConfiguration()
         {
-            ToTable("Player");
+            ToTable(TablePlayer);
 
             // Many Players to One Category
             HasRequired(p => p.Category)
@@ -21,7 +22,7 @@ namespace ComunioLite.Backend.DAL.ModelConfigurations
                 .HasForeignKey(p => p.TeamId)
                 .WillCascadeOnDelete(false);
 
-            Property(p => p.Name).HasMaxLength(50);
+            Property(p => p.Name).HasMaxLength(PlayerNameMaxLength);
         }
     }
 }

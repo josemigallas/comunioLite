@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity.ModelConfiguration;
 using ComunioLite.Backend.Entities;
+using static Constants.Constants;
 
 namespace ComunioLite.Backend.DAL.ModelConfigurations
 {
@@ -7,9 +8,9 @@ namespace ComunioLite.Backend.DAL.ModelConfigurations
     {
         public CategoryConfiguration()
         {
-            ToTable("Category");
+            ToTable(TableCategory);
 
-            Property(c => c.Name).HasMaxLength(20);
+            Property(c => c.Name).HasMaxLength(CategoryNameMaxLength);
         }
     }
 }
