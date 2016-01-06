@@ -10,7 +10,7 @@ namespace ComunioLite.Backend.DAL.SeedEntities
             new Team
             {
                 Name = "Market",
-                ManagerId = 0,
+                ManagerId = 1,
             }
         };
 

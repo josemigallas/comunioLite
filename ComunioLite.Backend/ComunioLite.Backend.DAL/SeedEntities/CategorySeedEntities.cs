@@ -9,22 +9,22 @@ namespace ComunioLite.Backend.DAL.SeedEntities
         {
             new Category
             {
-                Id = 0,
+                Id = 1,
                 Name = "forward",
             },
             new Category
             {
-                Id = 1,
+                Id = 2,
                 Name = "midfielder",
             },
             new Category
             {
-                Id = 2,
+                Id = 3,
                 Name = "defender",
             },
             new Category
             {
-                Id = 3,
+                Id = 4,
                 Name = "goalkeeper",
             }
         };

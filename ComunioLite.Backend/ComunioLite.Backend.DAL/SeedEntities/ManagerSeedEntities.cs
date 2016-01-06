@@ -9,7 +9,7 @@ namespace ComunioLite.Backend.DAL.SeedEntities
         {
             new Manager
             {
-                Id = 0,
+                Id = 1,
                 Name = "Computer",
             }
         };
