@@ -1,13 +1,15 @@
 ﻿using System.Data.Entity;
 using ComunioLite.Backend.DAL.ModelConfigurations;
 using ComunioLite.Backend.Entities;
+using static Constants.Constants;
 
 namespace ComunioLite.Backend.DAL
 {
     public class ComunioLiteContext : DbContext
     {
-        public ComunioLiteContext() : this("ComunioLite")
+        public ComunioLiteContext() : base(DbName)
         {
+            Configuration.LazyLoadingEnabled = false;
         }
 
         public ComunioLiteContext(string connectionString) : base(connectionString)
