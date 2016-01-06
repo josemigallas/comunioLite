@@ -10,6 +10,7 @@ namespace ComunioLite.Backend.DAL.ModelConfigurations
         {
             ToTable(TableManager);
 
+            // One Manager to One Team
             HasRequired(m => m.Team)
                 .WithRequiredPrincipal(t => t.Manager)
                 .WillCascadeOnDelete(false);
