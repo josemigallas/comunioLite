@@ -103,12 +103,12 @@ namespace ComunioLite.BackEnd.TestRunners.ManagerLogin
 
         private static void PrintManagersTable()
         {
-            Console.WriteLine("Manager\t\tTeam");
+            Console.WriteLine($"{"Manager", -ManagerNameMaxLength}{"Team", -TeamNameMaxLength}Money");
             Console.WriteLine();
 
             foreach (var manager in _managers.Where(m => m.Id != ComputerId))
             {
-                Console.WriteLine($"{manager.Name}\t\t{manager.Team.Name}");
+                Console.WriteLine($"{manager.Name, -ManagerNameMaxLength}{manager.Team.Name, -TeamNameMaxLength}{manager.Money}");
             }
 
             Console.WriteLine();
