@@ -27,11 +27,7 @@ namespace ComunioLite.BackEnd.TestRunners.ManagerLogin
         {
             _managers = _repository.GetManagers() as IList<Manager>;
 
-            Console.Clear();
-            Console.WriteLine("¡Welcome to ComunioLite!");
-            Console.WriteLine();
-
-            PrintManagersTable();
+            ClearAndPrintHeader();
 
             Console.Write("Enter your name: ");
             _playerName = Console.ReadLine();
@@ -42,9 +38,19 @@ namespace ComunioLite.BackEnd.TestRunners.ManagerLogin
             }
         }
 
+        private static void ClearAndPrintHeader()
+        {
+            Console.Clear();
+            Console.WriteLine("¡Welcome to ComunioLite!");
+            Console.WriteLine();
+
+            PrintManagersTable();
+        }
+
         private static void AskToCreateNewManager()
         {
-            Console.Write("There is no manager with that name. ¿Create a new one <y/n>? ");
+            ClearAndPrintHeader();
+            Console.Write($"There is no manager with name \"{_playerName}\". ¿Create a new one <y/n>? ");
             var c = Console.ReadKey().KeyChar;
             Console.WriteLine();
 
@@ -64,7 +70,8 @@ namespace ComunioLite.BackEnd.TestRunners.ManagerLogin
 
         private static void CreateNewManagerAndTeam()
         {
-            Console.Write("Enter the name of your new team: ");
+            ClearAndPrintHeader();
+            Console.Write($"Enter a team name for {_playerName}: ");
             var teamName = Console.ReadLine();
 
             var team = new Team
