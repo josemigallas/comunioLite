@@ -16,22 +16,29 @@ namespace ComunioLite.BackEnd.TestRunners.ManagerLogin
         public static void Main(string[] args)
         {
             _repository = new ComunioLiteRepository(new ComunioLiteContext());
-            _managers = _repository.GetManagers() as IList<Manager>;
 
             using (_repository)
             {
-                Console.WriteLine("¡Welcome to ComunioLite!");
-                Console.WriteLine();
+                LoginInterfaceInit();
+            }
+        }
 
-                PrintManagersTable();
+        private static void LoginInterfaceInit()
+        {
+            _managers = _repository.GetManagers() as IList<Manager>;
 
-                Console.Write("Enter your name: ");
-                _playerName = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("¡Welcome to ComunioLite!");
+            Console.WriteLine();
 
-                if (PlayerNameNotExist())
-                {
-                    AskToCreateNewManager();
-                }
+            PrintManagersTable();
+
+            Console.Write("Enter your name: ");
+            _playerName = Console.ReadLine();
+
+            if (PlayerNameNotExist())
+            {
+                AskToCreateNewManager();
             }
         }
 
@@ -39,6 +46,7 @@ namespace ComunioLite.BackEnd.TestRunners.ManagerLogin
         {
             Console.Write("There is no manager with that name. ¿Create a new one <y/n>? ");
             var c = Console.ReadKey().KeyChar;
+            Console.WriteLine();
 
             switch (c)
             {
@@ -46,6 +54,7 @@ namespace ComunioLite.BackEnd.TestRunners.ManagerLogin
                     CreateNewManagerAndTeam();
                     break;
                 case 'n':
+                    LoginInterfaceInit();
                     break;
                 default:
                     AskToCreateNewManager();
@@ -55,7 +64,6 @@ namespace ComunioLite.BackEnd.TestRunners.ManagerLogin
 
         private static void CreateNewManagerAndTeam()
         {
-            Console.WriteLine();
             Console.Write("Enter the name of your new team: ");
             var teamName = Console.ReadLine();
 
@@ -72,6 +80,13 @@ namespace ComunioLite.BackEnd.TestRunners.ManagerLogin
             };
 
             _repository.AddManager(manager);
+
+            Console.Clear();
+            Console.WriteLine("New Manager Added!");
+            Console.WriteLine();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+            LoginInterfaceInit();
         }
 
         private static bool PlayerNameNotExist()
