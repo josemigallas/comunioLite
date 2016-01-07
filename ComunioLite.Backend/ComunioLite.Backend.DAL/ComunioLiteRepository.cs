@@ -27,5 +27,20 @@ namespace ComunioLite.Backend.DAL
         {
             _dbContext.Dispose();
         }
+
+        public IEnumerable<Manager> GetManagers()
+        {
+            return _dbContext
+                .Managers
+                .Include(TableTeam)
+                .ToList();
+        }
+
+        public void AddManager(Manager manager)
+        {
+            _dbContext.Teams.Add(manager.Team);
+            _dbContext.Managers.Add(manager);
+            _dbContext.SaveChanges();
+        }
     }
 }

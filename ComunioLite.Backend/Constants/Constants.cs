@@ -2,8 +2,14 @@
 {
     public static class Constants
     {
+        // Game Constants
+        public static double StartingMoney = 1000000;
+
+        // Data Base Commons
         public static string DbName = "ComunioLite";
 
+        // Computer Player
+        public static int ComputerId = 1;
         public static string TeamMarket = "Market";
 
         // Table Names
