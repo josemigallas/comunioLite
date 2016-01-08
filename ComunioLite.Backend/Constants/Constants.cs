@@ -3,7 +3,8 @@
     public static class Constants
     {
         // Game Constants
-        public const double StartingMoney = 1000000;
+        public const double StartingMoney = 10000000;
+        public const int TeamMaxSize = 5;
 
         // Data Base Commons
         public const string DbName = "ComunioLite";

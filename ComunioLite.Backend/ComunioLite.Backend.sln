@@ -25,6 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{CB023F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunioLite.Backend.ManagerLogin", "ComunioLite.BackEnd.ManagerLogin\ComunioLite.Backend.ManagerLogin.csproj", "{663599C4-7F88-47D2-80AF-7BA5C8DE34F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunioLite.Backend.Market", "ComunioLite.Backend.Market\ComunioLite.Backend.Market.csproj", "{C9C81A7B-23DC-4338-8827-5654EBA5AC0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +61,10 @@ Global
 		{663599C4-7F88-47D2-80AF-7BA5C8DE34F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{663599C4-7F88-47D2-80AF-7BA5C8DE34F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{663599C4-7F88-47D2-80AF-7BA5C8DE34F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9C81A7B-23DC-4338-8827-5654EBA5AC0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9C81A7B-23DC-4338-8827-5654EBA5AC0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9C81A7B-23DC-4338-8827-5654EBA5AC0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9C81A7B-23DC-4338-8827-5654EBA5AC0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,5 +77,6 @@ Global
 		{16C040C4-D2AA-4512-8DD6-5722B64C835F} = {212392FA-03B1-47D3-94E2-E87D013B15F5}
 		{BE2679D0-A1BF-47DB-AE43-8C9758B61338} = {CB023FBD-EA94-4D2C-A78B-F25EEB77C9A8}
 		{663599C4-7F88-47D2-80AF-7BA5C8DE34F5} = {D02EF4B4-263D-4F07-AD52-8B2A494A48A9}
+		{C9C81A7B-23DC-4338-8827-5654EBA5AC0D} = {D02EF4B4-263D-4F07-AD52-8B2A494A48A9}
 	EndGlobalSection
 EndGlobal
