@@ -11,6 +11,7 @@ namespace ComunioLite.Backend.ManagerLogin
         private static ComunioLiteRepository _repository;
         private static IList<Manager> _managers;
         private static string _playerName;
+        private static int _playerId;
 
         public static void Main(string[] args)
         {
@@ -34,6 +35,17 @@ namespace ComunioLite.Backend.ManagerLogin
             if (PlayerNameNotExist())
             {
                 AskToCreateNewManager();
+            }
+            else
+            {
+                string[] managerId =
+                {
+                    _managers
+                        .First(m => m.Name.Equals(_playerName))
+                        .Id
+                        .ToString()
+                };
+                Market.Program.Main(managerId);
             }
         }
 
@@ -102,7 +114,8 @@ namespace ComunioLite.Backend.ManagerLogin
 
         private static void PrintManagersTable()
         {
-            Console.WriteLine($"{"Manager",-Constants.Constants.ManagerNameMaxLength}{"Team",-Constants.Constants.TeamNameMaxLength}Money");
+            Console.WriteLine(
+                $"{"Manager",-Constants.Constants.ManagerNameMaxLength}{"Team",-Constants.Constants.TeamNameMaxLength}Money");
             Console.WriteLine();
 
             foreach (var manager in _managers.Where(m => m.Id != Constants.Constants.ComputerId))

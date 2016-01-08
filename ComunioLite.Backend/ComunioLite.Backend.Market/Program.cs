@@ -12,7 +12,7 @@ namespace ComunioLite.Backend.Market
         private static ComunioLiteRepository _repository;
         private static Manager _manager;
 
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
             _repository = new ComunioLiteRepository(new ComunioLiteContext());
             _manager = _repository.GetManagerById(Convert.ToInt32(args[0]));

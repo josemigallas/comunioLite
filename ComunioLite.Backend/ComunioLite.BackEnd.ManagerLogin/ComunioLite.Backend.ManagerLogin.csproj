@@ -72,6 +72,10 @@
       <Project>{83f28ae6-3548-4dd5-ad85-4b8dae2f4ba8}</Project>
       <Name>ComunioLite.Backend.Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ComunioLite.Backend.Market\ComunioLite.Backend.Market.csproj">
+      <Project>{c9c81a7b-23dc-4338-8827-5654eba5ac0d}</Project>
+      <Name>ComunioLite.Backend.Market</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Constants\Constants.csproj">
       <Project>{be2679d0-a1bf-47db-ae43-8c9758b61338}</Project>
       <Name>Constants</Name>
