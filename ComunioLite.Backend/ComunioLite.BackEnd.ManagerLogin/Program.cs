@@ -4,7 +4,7 @@ using System.Linq;
 using ComunioLite.Backend.DAL;
 using ComunioLite.Backend.Entities;
 
-namespace ComunioLite.BackEnd.ManagerLogin
+namespace ComunioLite.Backend.ManagerLogin
 {
     public class Program
     {
