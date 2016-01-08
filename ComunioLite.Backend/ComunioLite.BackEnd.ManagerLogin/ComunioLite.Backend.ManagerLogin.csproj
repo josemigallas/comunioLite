@@ -7,8 +7,8 @@
     <ProjectGuid>{663599C4-7F88-47D2-80AF-7BA5C8DE34F5}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ComunioLite.BackEnd.TestRunners.ManagerLogin</RootNamespace>
-    <AssemblyName>ComunioLite.BackEnd.TestRunners.ManagerLogin</AssemblyName>
+    <RootNamespace>ComunioLite.BackEnd.ManagerLogin</RootNamespace>
+    <AssemblyName>ComunioLite.BackEnd.ManagerLogin</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

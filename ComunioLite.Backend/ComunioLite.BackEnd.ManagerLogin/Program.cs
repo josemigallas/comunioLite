@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using ComunioLite.Backend.DAL;
 using ComunioLite.Backend.Entities;
-using static Constants.Constants;
 
-namespace ComunioLite.BackEnd.TestRunners.ManagerLogin
+namespace ComunioLite.BackEnd.ManagerLogin
 {
     public class Program
     {
@@ -83,7 +82,7 @@ namespace ComunioLite.BackEnd.TestRunners.ManagerLogin
             {
                 Name = _playerName,
                 Team = team,
-                Money = StartingMoney
+                Money = Constants.Constants.StartingMoney
             };
 
             _repository.AddManager(manager);
@@ -103,12 +102,13 @@ namespace ComunioLite.BackEnd.TestRunners.ManagerLogin
 
         private static void PrintManagersTable()
         {
-            Console.WriteLine($"{"Manager", -ManagerNameMaxLength}{"Team", -TeamNameMaxLength}Money");
+            Console.WriteLine($"{"Manager",-Constants.Constants.ManagerNameMaxLength}{"Team",-Constants.Constants.TeamNameMaxLength}Money");
             Console.WriteLine();
 
-            foreach (var manager in _managers.Where(m => m.Id != ComputerId))
+            foreach (var manager in _managers.Where(m => m.Id != Constants.Constants.ComputerId))
             {
-                Console.WriteLine($"{manager.Name, -ManagerNameMaxLength}{manager.Team.Name, -TeamNameMaxLength}{manager.Money}");
+                Console.WriteLine(
+                    $"{manager.Name,-Constants.Constants.ManagerNameMaxLength}{manager.Team.Name,-Constants.Constants.TeamNameMaxLength}{manager.Money}");
             }
 
             Console.WriteLine();

@@ -23,7 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constants", "Constants\Cons
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{CB023FBD-EA94-4D2C-A78B-F25EEB77C9A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunioLite.BackEnd.ManagerLogin", "ComunioLite.BackEnd.TestRunners.ManagerLogin\ComunioLite.BackEnd.ManagerLogin.csproj", "{663599C4-7F88-47D2-80AF-7BA5C8DE34F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunioLite.Backend.ManagerLogin", "ComunioLite.BackEnd.ManagerLogin\ComunioLite.Backend.ManagerLogin.csproj", "{663599C4-7F88-47D2-80AF-7BA5C8DE34F5}"
+EndProject
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
